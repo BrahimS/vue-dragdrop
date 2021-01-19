@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    myArray: [
+    clientsQuestions: [
       {id:1, name: "Question number 1"},
       {id:2, name: "Question number 2"},
       {id:3, name: "Question number 3"},

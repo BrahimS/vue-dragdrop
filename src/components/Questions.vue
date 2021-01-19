@@ -2,14 +2,14 @@
 <div>
    <h1>Questions page</h1>
    <draggable 
-    v-model="myArray" 
+    v-model="clientsQuestions" 
     group="people" 
     
     @end="onEnd" 
     ghost-class="ghost"
    >
    <transition-group type="transition" name="flip-list">
-       <div class="sortable" v-for="element in $store.state.myArray" :key="element.id"  :id="element.id">
+       <div class="sortable" v-for="element in $store.state.clientsQuestions" :key="element.id"  :id="element.id">
            <strong>{{ element.name}}</strong>
            <span>{{ element.id}}</span>
        </div>
